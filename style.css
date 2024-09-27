@@ -1,0 +1,524 @@
+/* here i am gonna using google font css */
+
+  /* font-family: "Montserrat", sans-serif; */
+:root{
+  /* here i am gonna variables of colors */
+  --dark-bold-orabge-color: #984300;
+  --light-orange-color:#FD6F00;
+  --dark-light-orange-color:#CA5900;
+  --light-light-orange-color:#E46400;
+  --dark-bold-gray-color:#707070;
+  --dark-gray-color:#959595;
+  --light-gray-color:#DFDFDF;
+  --white-color:#FEFEFE;
+  --black-gray-color:  #575757;
+  --black-color:#000;
+  --toggle-button-color:#2C2C2C;
+}
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+body{
+  max-width: 1400px;
+  font-family: "Montserrat", sans-serif; 
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+/* here i have gonna styling section one */
+.section-one{
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+.section-one-part-one{
+  display: flex;
+  flex: 1;
+  gap: 5px;
+}
+.col-one{
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 280px;
+  gap: 5px;
+}
+.box-one-text{
+  background-color:var(--black-gray-color);
+  color: var(--white-color);
+  padding: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  flex: 0 1 70%;
+}
+.box-one-text img{
+  width: 2.2em;
+  height: 2.2em;
+  margin-bottom: 1rem;
+}
+.box-one-img{
+  flex: 0 1 30%;
+}
+.box-one-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* here i am gonna styling col-two section */
+.col-two{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  z-index: 999;
+}
+.col-two .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.col-two .text{
+  background-color: var(--black-gray-color);
+  color: var(--white-color);
+  padding: 20px;
+  position: relative;
+}
+.col-two .text h2{
+  color: var(--light-light-orange-color);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.col-two .text h2::after{
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  width: 200px;
+  height: 5px;
+  background-color: var(--light-light-orange-color);
+}
+.col-two .text h1{
+  font-weight: 400;
+  color: var(--light-gray-color);
+}
+.col-two .text p{
+  font-size: 12px;
+  margin-top: 8px;
+}
+/* here i am gonna styling section 1 part 2 */
+.section-one-part-two{
+  flex: 1;
+  width: 100%;
+}
+.section-one-part-two img{
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+/* here i have gonna styling section one */
+.section-two{
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+/* section-two part-one */
+.section-two-part-one{
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 70%; 
+}
+.upper-part{
+  display: flex;
+  flex: 0 1 70%;
+  gap: 5px;
+}
+.upper-part .upper-part-text{
+  display: flex;
+  gap: 5px;
+  background-color: var(--light-light-orange-color);
+  flex: 0 1 45%;
+  color: var(--white-color);
+  font-size: 10px;
+  padding: 20px 20px 20px 30px;
+}
+.upper-part .upper-part-text #letter-a::first-letter{
+  font-size: 50px; 
+  float: left; 
+  line-height: 1; 
+  font-weight: 700;
+}
+.upper-part .upper-part-img{
+  position: relative;
+  flex: 0 1 55%;
+}
+.upper-part .upper-part-img img{
+  position: absolute;
+  top: -160px;
+  width: 100%;
+  height: calc(100% + 160px);
+}
+/* section-two part two */
+.section-two-part-two{
+  display: flex;
+  position: relative;
+  gap:0;
+  flex-direction: column;
+  flex: 0 1 30%; 
+}
+
+ .orange-text{
+  position:absolute;
+  top: -165px;
+  background-color:var(--light-orange-color);
+  color: var(--white-color);
+  padding: 20px;
+  margin-top: 5px;
+  flex: 0 1 40%;
+  z-index: 999;
+}
+
+.orange-text h1{
+  font-weight: 300;
+  font-size: 40px;
+}
+.orange-text p{
+  font-size: 11px;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
+.orange-text h2{
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.orange-text h2::after{
+  position: absolute;
+  content: '';
+  top: 50px;
+  left: 20px;
+  width: 200px;
+  height: 4px;
+  background-color: var(--white-color);
+}
+.section-two-part-two .white-text{
+  flex: 0 1 60%;
+  font-size: 11px;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  padding: 2rem;
+  margin-top: 130px;
+}
+.white-text p{
+  color: var(--black-color);
+  font-weight: bold;
+}
+#letter-t{
+  color: var(--black-color);
+}
+#letter-t::first-letter{
+  font-size: 50px; 
+  float: left; 
+  line-height: 1;
+  font-weight: 700;
+  color: var(--black-color);
+}
+.section-two-part-two .white-text ol li{
+  line-height: 22px;
+  list-style: decimal;
+}
+.white-text ol li::marker{
+  color: var(--black-color);
+  font-weight: bold;
+}
+.section-two-part-one{
+  position: relative;
+}
+.upper-part-text .first-para{
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 50%;
+  padding: 15px 10px 10px 10px;
+}
+.upper-part-text .second-para{
+  flex: 0 1 50%;
+  padding: 10px 10px 10px 0;
+}
+.upper-part-text .first-para p{
+  word-spacing: 5px;
+}
+.upper-part-text .second-para p{
+  word-spacing: 5px;
+}
+.lower-part{
+  margin-top: 5px;
+  flex: 0 1 30%;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(2, 33, 56);
+  color: var(--white-color);
+}
+.lower-part img{
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-right: 20rem;
+}
+.lower-part p{
+  font-size: 12px;
+  line-height: 20x;
+  margin: 0 350px 50px 0;
+}
+@media(max-width:1200px){
+  .section-two-part-two .white-text {
+    margin-top: 150px;
+}
+}
+@media(max-width:1100px){
+  .section-two-part-two .white-text {
+    margin-top: 170px;
+  }
+}
+@media(max-width:1000px){
+  .section-two-part-two .white-text {
+    margin-top: 200px;
+  }
+  .section-one, .section-two{
+    flex-direction: column;
+  }
+  .lower-part, .upper-part{
+    flex-direction: column;
+    flex: 50%;
+  }
+  .upper-part .upper-part-img{
+    position: relative;
+    flex: 50%;
+  }
+  .upper-part .upper-part-img img{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 160px);
+}
+  .upper-part .upper-part-text{
+    flex: 50%;
+    font-size: 10px;
+    padding: 20px 20px 20px 30px;
+  }
+  .section-two-part-two{
+    display: flex;
+    position: relative;
+    gap: 5px;
+    flex-direction: row;
+    flex: 1;
+  }
+  .section-two-part-two .white-text{
+    position: relative;
+    flex: 0 1 50%;
+    padding: 2rem;
+    margin-top: 0;
+  }
+  .orange-text{
+    position:relative;
+    top: 0;
+    padding: 20px;
+    margin-top: 0;
+    flex: 0 1 50%;
+  }
+  .orange-text h1{
+    font-weight: 400;
+    font-size: 40px;
+  }
+  .lower-part img{
+    margin-bottom: 0;
+    margin-top: 2rem;
+    margin-right: 4rem;
+  }
+  .lower-part p{
+    margin: 0 4rem 4rem 4rem;
+  }
+}
+@media(max-width:900px){
+  .section-two-part-two .white-text {
+    margin-top: 250px;
+  }
+  .section-one, .section-two{
+    flex-direction: column;
+  }
+  .lower-part, .upper-part{
+    flex-direction: column;
+    flex: 50%;
+  }
+  .upper-part .upper-part-img{
+    position: relative;
+    flex: 50%;
+  }
+  .upper-part .upper-part-img img{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 160px);
+}
+  .upper-part .upper-part-text{
+    flex: 50%;
+    font-size: 10px;
+    padding: 20px 20px 20px 30px;
+  }
+  .section-two-part-two{
+    display: flex;
+    position: relative;
+    gap: 5px;
+    flex-direction: row;
+    flex: 1;
+  }
+  .section-two-part-two .white-text{
+    position: relative;
+    flex: 0 1 50%;
+    padding: 2rem;
+    margin-top: 0;
+  }
+  .orange-text{
+    position:relative;
+    top: 0;
+    padding: 20px;
+    margin-top: 0;
+    flex: 0 1 50%;
+  }
+  .orange-text h1{
+    font-weight: 400;
+    font-size: 40px;
+  }
+  .lower-part img{
+    margin-bottom: 0;
+    margin-top: 2rem;
+    margin-right: 4rem;
+  }
+  .lower-part p{
+    margin: 0 4rem 4rem 4rem;
+  }
+}
+@media(max-width:800px){
+  .section-two-part-two .white-text {
+    margin-top: 270px;
+  }
+  .section-one, .section-two{
+    flex-direction: column;
+  }
+  .lower-part, .upper-part{
+    flex-direction: column;
+    flex: 50%;
+  }
+  .upper-part .upper-part-img{
+    position: relative;
+    flex: 0 1 50%;
+  }
+  .upper-part .upper-part-img img{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+  .upper-part .upper-part-text{
+    flex: 0 1 50%;
+    font-size: 10px;
+    padding: 20px 20px 20px 30px;
+  }
+  .section-two-part-two{
+    display: flex;
+    position: relative;
+    gap: 5px;
+    flex-direction: row;
+    flex: 1;
+  }
+  .section-two-part-two .white-text{
+    position: relative;
+    flex: 0 1 50%;
+    padding: 2rem;
+    margin-top: 0;
+  }
+  .orange-text{
+    position:relative;
+    top: 0;
+    padding: 20px;
+    margin-top: 0;
+    flex: 0 1 50%;
+  }
+  .orange-text h1{
+    font-weight: 400;
+    font-size: 40px;
+  }
+  .lower-part img{
+    margin-bottom: 0;
+    margin-top: 2rem;
+    margin-right: 4rem;
+  }
+  .lower-part p{
+    margin: 0 4rem 4rem 4rem;
+  }
+}
+@media (max-width: 576px){
+  .section-one-part-one{
+    flex-direction: column;
+  }
+  .section-one, .section-two{
+    flex-direction: column;
+  }
+  .upper-part{
+    flex-direction: column;
+  }
+  .upper-part .upper-part-img{
+    position: relative;
+    flex: 0 1 50%;
+  }
+  .upper-part .upper-part-img img{
+    width: 100%;
+    height:100%;
+  }
+  .upper-part .upper-part-text{
+    flex: 0 1 50%;
+    font-size: 10px;
+    padding: 20px 20px 20px 30px;
+  }
+  .section-two-part-two{
+    display: flex;
+    position: relative;
+    gap: 5px;
+    flex-direction: column;
+    flex: 1;
+  }
+  .section-two-part-two .white-text{
+    position: relative;
+    flex: 0 1 50%;
+    padding: 2rem;
+    margin-top: 0;
+  }
+  .orange-text{
+    position:relative;
+    top: 0;
+    padding: 20px;
+    margin-top: 0;
+    flex: 0 1 50%;
+  }
+  .orange-text h1{
+    font-weight: 400;
+    font-size: 40px;
+  }
+  .lower-part p{
+    margin: 50px;
+  }
+}
